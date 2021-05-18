@@ -48,7 +48,7 @@ def get_proxy_plugin(**kwargs):
 def chrome_options(headless: bool = False) -> Options:
     options = Options()
     options.headless = headless
-    options.add_argument("--incognito")
+    #options.add_argument("--incognito")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     prefs = get_pref()
